@@ -42,6 +42,7 @@
     "webpack-merge": "^5.10.0"
   },
   "dependencies": {
+    "caniuse-lite": "^1.0.30001669",
     "jest-environment-jsdom": "^29.7.0",
     "jest-puppeteer": "^10.0.1",
     "puppeteer": "^23.5.0"

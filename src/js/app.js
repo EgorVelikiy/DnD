@@ -1,10 +1,16 @@
-import ShowPopover from './components/show_popover/showPopover';
-import createContainer from './components/container/create_container';
+import List from './components/list_create/list_create'
+import DnD from './components/DnD/DnD'
 
-createContainer();
-export default function start() {
-  const showPopover = new ShowPopover();
-  showPopover.init();
-}
+const lists = document.querySelectorAll('.list-container')
 
-start();
+lists.forEach((li) => {
+  const newList = new List(li)
+  newList.bindDOM()
+})
+
+const listBody = document.querySelector('.container')
+const newDnD = new DnD(listBody)
+newDnD.onMouseDown();
+newDnD.onMouseMove();
+newDnD.onMouseUp();
+newDnD.getCardBack();
