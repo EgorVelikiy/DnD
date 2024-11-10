@@ -2,6 +2,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+.my-handle {
+	cursor: move;
+	cursor: -webkit-grabbing;
+  transform: rotate(5deg);
+}
 
 .grabbing {
   cursor: grabbing;
